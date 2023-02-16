@@ -17,8 +17,6 @@ Examples of audio in racing games: https://youtu.be/R0WYMskS6UM
 Tesla Electric cars sounding like ICE cars: https://youtu.be/VLtw-KJBrkQ
 Sounds of Formula-E (Electric open wheel race cars): https://youtu.be/OHlqXfG78Rs 
 
-Hopefully this is within the ballpark of acceptable projects, feedback would be much appreciated. 
-
 ## Members
 Mitchell Nursey
  
