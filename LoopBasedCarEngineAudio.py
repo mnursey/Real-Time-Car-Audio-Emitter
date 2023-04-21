@@ -87,6 +87,7 @@ def callback(in_data, frame_count, time_info, status):
     global frame_clock
     global yamaha_audio
     global sample_lerp
+    global sample_lerp_rate
     global speed_variation
     global wind_audio
     global wind_gain_max
