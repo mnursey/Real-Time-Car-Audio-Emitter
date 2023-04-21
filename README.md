@@ -108,7 +108,7 @@ The adjustable parameters inlude:
 
 The only parameter which can be adjusted at realtime is `engine_speed` using the GUI slider, the rest of the parameters can be adjusted within the code. The GUI slider is displayed using the PyGame library.
 
-As a reference of the sound of audio we're trying to acheive this YouTube video by Aaron Smith 1975 is a good refernce. 
+As a reference of the audio we're trying to achieve this YouTube video by Aaron Smith 1975 is a good refernce. 
 
 https://youtu.be/G9QmB2Kjhpc
 
