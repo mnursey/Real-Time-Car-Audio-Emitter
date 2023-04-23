@@ -78,15 +78,15 @@ Sarah : Developed car engine simulation from the Design Sound book.
 
 For the loop based method we load four audio wave files:
 - Acceleration Loop
-- Deacceleration Loop
+- Deceleration Loop
 - Idle Loop
 - Wind audio Loop
 
-For the acceleration, deacceleration, and idle loop we've taken audio from a Yamaha 24MX motorcycle engine. This engine is a 125cc dirt bike engine. Although this engine isn't from a car, we've choosen this engine as it is mechanically simple, has only a single cylinder, and there is plenty of references online for how this engine should sound. We also have experience hearing a similar  type of engine, which we will use as a comparison later.
+For the acceleration, deceleration, and idle loop we've taken audio from a Yamaha 24MX motorcycle engine. This engine is a 125cc dirt bike engine. Although this engine isn't from a car, we've choosen this engine as it is mechanically simple, has only a single cylinder, and there is plenty of references online for how this engine should sound. We also have experience hearing a similar  type of engine, which we will use as a comparison later.
 
-For the acceleration, deacceleration, and idle samples that are loaded by our Python code, we have edited them to only contain one cycle from the engine. We loaded the original source loops into Audacity, and identified where the engine audio repeats. We only used one cycle in our audio samples as we wanted finer control over the audio sound. We can below that each cycle has a small amount of difference from the previous cycle. This is something we wanted control over.
+For the acceleration, deceleration, and idle samples that are loaded by our Python code, we have edited them to only contain one cycle from the engine. We loaded the original source loops into Audacity, and identified where the engine audio repeats. We only used one cycle in our audio samples as we wanted finer control over the audio sound. We can below that each cycle has a small amount of difference from the previous cycle. This is something we wanted control over.
 
-The acceleration and deacceleration samples are identical besides differences in EQ we've applied using Audacity. The acceleration sample is the sound for when the engine throttle is open, while the deacceleration sample is for when the engine is closed.
+The acceleration and deceleration samples are identical besides differences in EQ we've applied using Audacity. The acceleration sample is the sound for when the engine throttle is open, while the deceleration sample is for when the engine is closed.
 
 ![Screenshot of Engine Audio Looping](/Audio%20Samples/Yamaha_24MX/repeating_loops.PNG "Repeating Cycles of engines audio")
 
@@ -95,15 +95,15 @@ We use a real-time callback based audio stream with pyaudio to play the audio. T
 The adjustable parameters inlude:
 - `max_speed`: This is a how many multiples the reference sample can be speedup by. For example, a value of 2 would mean the reference sample can be played back at a maximum of double the speed.
 - `min_speed`: This is how many multiples the reference sample can be slowndown by. For example, a value of 0.5 would mean the reference sample can be played back at a minimum of half the speed.
-- `idle_speed` : If the engine speed is below this value the idle sample begins to fade in and the acceleration/deacceleration loops fade out. Above this value the opposite occurs.
+- `idle_speed` : If the engine speed is below this value the idle sample begins to fade in and the acceleration/deceleration loops fade out. Above this value the opposite occurs.
 - `accelerate_sound_gain`: How 'loud' the acceleration sample is played back.
-- `deaccelerate_sound_gain`: How 'loud' the deacceleration sample is played back.
+- `deaccelerate_sound_gain`: How 'loud' the deceleration sample is played back.
 - `idle_sound_gain`: How 'load' the idle sample is played back.
 - `speed_variation`: The amount of random variation in the playback speed of the samples from the desired engine speed. This adds in random variation.
 - `wind_gain_max`: The maximum 'volume' for the wind sample, this is the value when the engine is at its max speed.
 - `wind_gain_min`: THe minimum 'volume' for the wind sample, this is the value when the engine is it its min speed.
-- `idle_lerp_rate`: How quickly the engine fades from idle to acceleration / deacceleration samples.
-- `sample_lerp`: How quickly the engine fades from acceleration to deacceleration samples. This value can be changed to change how 'laggy' the engine is.
+- `idle_lerp_rate`: How quickly the engine fades from idle to acceleration / deceleration samples.
+- `sample_lerp`: How quickly the engine fades from acceleration to deceleration samples. This value can be changed to change how 'laggy' the engine is.
 - `engine_speed` : The speed at which the engine is at. This value determins how much or little the samples are speed up or slowed down. 
 
 The only parameter which can be adjusted at realtime is `engine_speed` using the GUI slider, the rest of the parameters can be adjusted within the code. The GUI slider is displayed using the PyGame library.
@@ -114,7 +114,7 @@ https://youtu.be/G9QmB2Kjhpc
 
 Although the engine in this video isn't identical to the Yamaha 24MX the mechnical behaviour is similar enough to be a valid comparison. In this video the audio recorded with a GoPro camera and contains a lot of wind noise. We've decided to emulate the wind noise by using a wind audio sample. In both the video reference and our sample based method the engine speed increases the wind playback speed and volume increase.
 
-The benifits to the sample based methods include:
+The benefits to the sample based methods include:
 - Computationally inexpensive
 - Easy to tune, few parameters
 - Easy to get audio to sound realistic
