@@ -114,4 +114,12 @@ https://youtu.be/G9QmB2Kjhpc
 
 Although the engine in this video isn't identical to the Yamaha 24MX the mechnical behaviour is similar enough to be a valid comparison. In this video the audio recorded with a GoPro camera and contains a lot of wind noise. We've decided to emulate the wind noise by using a wind audio sample. In both the video reference and our sample based method the engine speed increases the wind playback speed and volume increase.
 
+The benifits to the sample based methods include:
+- Computationally inexpensive
+- Easy to tune, few parameters
+- Easy to get audio to sound realistic
+
+Disadvantages: 
+- Not very expressive
+- Requires recorded samples of engine sounds  
 
