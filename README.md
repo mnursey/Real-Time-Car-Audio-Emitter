@@ -62,7 +62,7 @@ Physically informed car engine sound synthesis for virtual and augmented environ
 
 ## Members
 Mitchell Nursey \
-Sarah Chasauce
+Sarah Delorme
 
 ## Project work distribution
 Mitchell : Developed sample based car engine audio, updated github, researched methods for generating car audio, populated resources, setup milestones and project proposal.
