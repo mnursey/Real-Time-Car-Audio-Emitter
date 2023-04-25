@@ -76,6 +76,8 @@ Sample-based engine noise synthesis using a harmonic synchronous overlap-and-add
 
 Physically informed car engine sound synthesis for virtual and augmented environments : https://ieeexplore.ieee.org/abstract/document/7361287
 
+Designing Sound by Andy Farnell
+
 ## Members
 Mitchell Nursey \
 Sarah Delorme
