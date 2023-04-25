@@ -17,7 +17,7 @@ Engine layout: Inline vs Boxster vs V* (V4, V6, V8, etc) vs Rotary
 Engine stroke: 2-Stroke vs 4-Stroke
 
 ## Project Description
-For our Real Time Car Audio Emmitter project we've decided to implement a few different methods for generating car audio sounds and comparing them. We're going to try a sampling based method, a physically based modeling method. In the resources section there are several papers explaining different methods for designing physically based models.
+For our Real Time Car Audio Emmitter project we've decided to implement a few different methods for generating car audio sounds and comparing them. We're going to try a sampling based method and a physically based modeling method. In the resources section there are several papers explaining different methods for designing physically based models.
 
 ## Code
 
