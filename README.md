@@ -32,7 +32,7 @@ This python code requires the following python libraries installed:
 - pygame-widgets
 
 For the physical modelling based car engine audio: \
-The main notebook is physical_modeling_engine.ipynb
+The main notebook is physical_modeling_engine.ipynb \
 This python code requires the following python libraries installed: 
 - numpy
 - scipy.io.wavefile
