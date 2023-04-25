@@ -85,7 +85,7 @@ Sarah Delorme
 ## Project work distribution
 Mitchell : Developed sample based car engine audio, updated github, researched methods for generating car audio, populated resources, setup milestones and project proposal.
 
-Sarah : Developed car engine simulation from the Design Sound book.
+Sarah : Developed physical modelling car engine audio synthesis from Designing Sound by Andy Farnell.
 
 ## Tech Stack
 - Python 3.9+
